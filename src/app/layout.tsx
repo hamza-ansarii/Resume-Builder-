@@ -1,11 +1,10 @@
 import "globals.css";
-import { TopNavBar } from "components/TopNavBar";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
-  title: "OpenResume - Free Open-source Resume Builder and Parser",
+  title: "NextOra.Ai",
   description:
-    "OpenResume is a free, open-source, and powerful resume builder that allows anyone to create a modern professional resume in 3 simple steps. For those who have an existing resume, OpenResume also provides a resume parser to help test and confirm its ATS readability.",
+    "NextOra.Ai is your smart, AI-powered resume builder and analyzer to help you create ATS-friendly resumes effortlessly.",
 };
 
 export default function RootLayout({
@@ -15,8 +14,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* 🔗 Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+        {/* Optional: For high-res PNG favicon */}
+        {/* <link rel="icon" href="/favicon.png" type="image/png" /> */}
+      </head>
       <body>
-        <TopNavBar />
         {children}
         <Analytics />
       </body>

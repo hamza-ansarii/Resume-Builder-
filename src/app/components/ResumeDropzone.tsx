@@ -97,11 +97,12 @@ export const ResumeDropzone = ({
   return (
     <div
       className={cx(
-        "flex justify-center rounded-md border-2 border-dashed border-gray-300 px-6 ",
-        isHoveredOnDropzone && "border-sky-400",
-        playgroundView ? "pb-6 pt-4" : "py-12",
-        className
-      )}
+  "flex justify-center rounded-md border-2 border-dashed border-gray-300 px-6 ",
+  isHoveredOnDropzone && "border-sky-400",
+  playgroundView ? "pb-6 pt-4" : "py-12",
+  className
+)}
+
       onDragOver={(event) => {
         event.preventDefault();
         setIsHoveredOnDropzone(true);
